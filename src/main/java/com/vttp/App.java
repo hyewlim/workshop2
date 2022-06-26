@@ -1,13 +1,15 @@
 package com.vttp;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        BankAccount hongyew = new BankAccount("Hong Yew", 23355);
+        hongyew.withdraw(1000);
+        hongyew.withdraw(233);
+        System.out.println(hongyew.getBalance());
+        System.out.println(hongyew.getTransactions());
+
+        
     }
 }
